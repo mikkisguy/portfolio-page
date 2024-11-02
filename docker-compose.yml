@@ -1,0 +1,17 @@
+services:
+  portfolio-page:
+    container_name: portfolio-page
+    image: ghcr.io/mikkisguy/portfolio-page:latest
+    labels:
+      - com.centurylinklabs.watchtower.enable=true
+    env_file:
+      - .env
+    environment:
+      - SSL_CERT_PATH=$SSL_CERT_PATH
+      - SSL_KEY_PATH=$SSL_KEY_PATH
+    volumes:
+      - $SSL_CERT_PATH:$SSL_CERT_PATH
+      - $SSL_KEY_PATH:$SSL_KEY_PATH
+    ports:
+      - $REACT_PORT:443
+    restart: unless-stopped
