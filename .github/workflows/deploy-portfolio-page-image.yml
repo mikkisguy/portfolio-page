@@ -33,7 +33,6 @@ jobs:
       - name: Build frontend
         run: |
           corepack enable
-          cd frontend
           yarn install --immutable
           yarn build
 
