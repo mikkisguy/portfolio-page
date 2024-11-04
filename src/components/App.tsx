@@ -38,6 +38,10 @@ const PageContainer = styled.div`
     width: 100%;
     padding: 0 ${({ theme }) => theme.spacing.xxxl};
   }
+
+  @media only screen and (min-width: ${({ theme }) => theme.bp.wide}) {
+    width: 50%;
+  }
 `;
 
 const UnderDevelopment = styled.div`
