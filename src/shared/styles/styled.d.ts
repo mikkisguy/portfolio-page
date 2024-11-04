@@ -18,6 +18,7 @@ type SpacingStyles = {
 type FontStyles = {
   h1: string;
   h2: string;
+  tagline: string;
   body: string;
   bodyBold: string;
   bodyItalic: string;

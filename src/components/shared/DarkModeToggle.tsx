@@ -11,6 +11,7 @@ import { ColorStyles, ThemeContext } from "../../shared/styles/styled";
 import { themes } from "../../shared/styles/themes";
 import { SiteThemeContext } from "../ThemeContextProvider";
 import { useDarkMode } from "../../shared/utils";
+import { useTranslation } from "react-i18next";
 
 type AwesomeIconType = React.ComponentType<{
   icon: IconDefinition;
@@ -24,6 +25,7 @@ type AwesomeIconType = React.ComponentType<{
  * @return {React.JSX.Element} The Dark Mode Toggle component
  */
 const DarkModeToggle = () => {
+  const { t } = useTranslation();
   const { setCurrentTheme } = useContext(SiteThemeContext) as ThemeContext;
 
   /**
@@ -49,7 +51,7 @@ const DarkModeToggle = () => {
   };
 
   return (
-    <ToggleForm title="Vaihda teemaa">
+    <ToggleForm title={t("changeTheme")}>
       <ToggleCheckbox
         checked={useDarkMode()}
         onChange={handleChange}
@@ -67,7 +69,7 @@ const DarkModeToggle = () => {
             icon={faCircle}
             className={`${useDarkMode() && "dark-mode"}`}
           />
-          <LabelText>Tumma teema</LabelText>
+          <LabelText>{t("darkMode")}</LabelText>
         </Toggle>
       </ToggleLabel>
     </ToggleForm>

@@ -15,8 +15,9 @@ export const base: BaseStyles = {
     linear: "all 0.20s linear",
   },
   fonts: {
-    h1: "4rem/1 'Source Code Pro Bold', monospace",
+    h1: "3.5rem/1 'Source Code Pro Bold', monospace",
     h2: "2rem/1.8 'DM Sans Bold', sans-serif",
+    tagline: "1.3rem/1.8 'DM Sans Bold', sans-serif",
     body: "1.1rem/1.8 'DM Sans', sans-serif",
     bodyBold: "1.1rem/1.8 'DM Sans Bold', sans-serif",
     bodyItalic: "1.1rem/1.8 'DM Sans Italic', sans-serif",

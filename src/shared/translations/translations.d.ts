@@ -7,5 +7,10 @@ declare module "i18next" {
 }
 
 export type TranslationResource = {
+  underDevelopment: string;
   changeLanguage: string;
+  changeTheme: string;
+  darkMode: string;
+  header: string;
+  tagline: string;
 };
