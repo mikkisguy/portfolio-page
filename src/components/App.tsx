@@ -34,12 +34,9 @@ const PageContainer = styled.div`
   width: 60%;
   flex: 1;
 
-  @media only screen and (max-width: ${({ theme }) => theme.bp.wide}) {
-    width: 65%;
-  }
-
-  @media only screen and (max-width: ${({ theme }) => theme.bp.narrow}) {
+  @media only screen and (max-width: ${({ theme }) => theme.bp.small}) {
     width: 100%;
+    padding: 0 ${({ theme }) => theme.spacing.xxxl};
   }
 `;
 

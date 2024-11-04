@@ -34,6 +34,10 @@ const PageOptions = styled.div`
   justify-content: left;
   width: 100%;
   padding-top: ${({ theme }) => theme.spacing.xxl};
+
+  @media only screen and (max-width: ${({ theme }) => theme.bp.narrow}) {
+    justify-content: center;
+  }
 `;
 
 const PageHeading = styled.div`
@@ -41,6 +45,11 @@ const PageHeading = styled.div`
   flex-direction: row;
   gap: ${({ theme }) => theme.spacing.xxl};
   padding-top: ${({ theme }) => theme.spacing.xxxl};
+
+  @media only screen and (max-width: ${({ theme }) => theme.bp.narrow}) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const HeadingImage = styled.img`
@@ -53,10 +62,18 @@ const HeadingTitle = styled.h1`
   font: ${({ theme }) => theme.fonts.h1};
   margin-bottom: ${({ theme }) => theme.spacing.xl};
   padding-top: ${({ theme }) => theme.spacing.l};
+
+  @media only screen and (max-width: ${({ theme }) => theme.bp.narrow}) {
+    text-align: center;
+  }
 `;
 
 const Tagline = styled.p`
   color: ${({ theme }) => theme.colors.bodyText};
   font: ${({ theme }) => theme.fonts.tagline};
   margin-top: ${({ theme }) => theme.spacing.xxl};
+
+  @media only screen and (max-width: ${({ theme }) => theme.bp.narrow}) {
+    text-align: center;
+  }
 `;
