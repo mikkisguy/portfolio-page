@@ -3,26 +3,22 @@ import DarkModeToggle from "./shared/DarkModeToggle";
 import LanguageSwitcher from "./shared/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 import mikko from "../assets/images/mikko.webp";
-import Divider from "./shared/Divider";
 
 const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <>
-      <header>
-        <PageOptions>
-          <DarkModeToggle />
-          <LanguageSwitcher />
-        </PageOptions>
-        <PageHeading>
-          <HeadingImage src={mikko} />
-          <HeadingTitle>{t("header")}</HeadingTitle>
-        </PageHeading>
-        <Tagline>{t("tagline")}</Tagline>
-      </header>
-      <Divider />
-    </>
+    <header>
+      <PageOptions>
+        <DarkModeToggle />
+        <LanguageSwitcher />
+      </PageOptions>
+      <PageHeading>
+        <HeadingImage src={mikko} />
+        <HeadingTitle>{t("header")}</HeadingTitle>
+      </PageHeading>
+      <Tagline>{t("tagline")}</Tagline>
+    </header>
   );
 };
 
@@ -53,15 +49,14 @@ const PageHeading = styled.div`
 `;
 
 const HeadingImage = styled.img`
-  width: 150px;
-  height: 150px;
+  max-height: 180px;
 `;
 
 const HeadingTitle = styled.h1`
   color: ${({ theme }) => theme.colors.heading};
   font: ${({ theme }) => theme.fonts.h1};
   margin-bottom: ${({ theme }) => theme.spacing.xl};
-  padding-top: ${({ theme }) => theme.spacing.l};
+  padding-top: ${({ theme }) => theme.spacing.xl};
 
   @media only screen and (max-width: ${({ theme }) => theme.bp.narrow}) {
     text-align: center;
