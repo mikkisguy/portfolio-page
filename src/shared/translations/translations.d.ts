@@ -13,6 +13,7 @@ export type TranslationResource = {
   darkMode: string;
   header: string;
   tagline: string;
+  sourceCode: string;
   portfolioItem: {
     image: string;
     tags: string;

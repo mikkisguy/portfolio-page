@@ -5,6 +5,7 @@ import Header from "./Header";
 import { useTranslation } from "react-i18next";
 import Divider from "./shared/Divider";
 import Content from "./Content";
+import Footer from "./Footer";
 
 const App = () => {
   const { t } = useTranslation();
@@ -18,6 +19,7 @@ const App = () => {
           <Header />
           <Divider />
           <Content />
+          <Footer />
         </PageContainer>
       </PageOuterContainer>
     </ThemeContextProvider>
