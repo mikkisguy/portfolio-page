@@ -8,6 +8,12 @@ const finnish: TranslationResource = {
   header: "Helou! Olen Mikko Larinen, hauska tutustua.",
   tagline:
     "Teen web-kehitystä ja videoeditointia. Tykkään hioa visuaalista puolta sekä sukeltaa syvemmälle konepellin alle.",
+  portfolioItem: {
+    image: "kuva",
+    tags: "Avainsanat",
+    hobbyProject: "Harrastus",
+    workProject: "Työ",
+  },
 };
 
 export default finnish;

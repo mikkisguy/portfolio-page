@@ -4,6 +4,7 @@ import ThemeContextProvider from "./ThemeContextProvider";
 import Header from "./Header";
 import { useTranslation } from "react-i18next";
 import Divider from "./shared/Divider";
+import Content from "./Content";
 
 const App = () => {
   const { t } = useTranslation();
@@ -16,6 +17,7 @@ const App = () => {
         <PageContainer>
           <Header />
           <Divider />
+          <Content />
         </PageContainer>
       </PageOuterContainer>
     </ThemeContextProvider>

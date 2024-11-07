@@ -8,6 +8,12 @@ const english: TranslationResource = {
   header: "Helou! I'm Mikko Larinen, nice to meet you.",
   tagline:
     "I do web development and video editing. I like to hone the visual side and dive deeper under the hood.",
+  portfolioItem: {
+    image: "image",
+    tags: "Tags",
+    hobbyProject: "Hobby",
+    workProject: "Work",
+  },
 };
 
 export default english;

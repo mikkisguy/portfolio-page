@@ -21,8 +21,8 @@ export const base: BaseStyles = {
     body: "1.1rem/1.8 'DM Sans', sans-serif",
     bodyBold: "1.1rem/1.8 'DM Sans Bold', sans-serif",
     bodyItalic: "1.1rem/1.8 'DM Sans Italic', sans-serif",
-    meta: "0.8rem/1.5 'DM Sans', sans-serif",
-    metaBold: "0.8rem/1.5 'DM Sans Bold', sans-serif",
+    meta: "0.9rem/1.5 'DM Sans', sans-serif",
+    metaBold: "0.9rem/1.5 'DM Sans Bold', sans-serif",
   },
   bp: {
     wide: "1920px",
