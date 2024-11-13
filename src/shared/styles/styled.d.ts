@@ -20,7 +20,6 @@ type FontStyles = {
   h2: string;
   tagline: string;
   body: string;
-  bodyBold: string;
   meta: string;
 };
 
@@ -28,10 +27,10 @@ export type ColorStyles = {
   themeIcon: string;
   background: string;
   backgroundSecondary: string;
-  backgroundTertiary: string;
   heading: string;
   bodyText: string;
   bodyTextSecondary: string;
+  border: string;
   accent: string;
   shadow: string;
   linkText: string;

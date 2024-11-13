@@ -67,7 +67,7 @@ const CategoryTag = styled.span`
   font: ${({ theme }) => theme.fonts.meta};
   color: ${({ theme }) => theme.colors.bodyTextSecondary};
   border: 3px solid;
-  border-color: ${({ theme }) => theme.colors.backgroundTertiary};
+  border-color: ${({ theme }) => theme.colors.border};
   padding: ${({ theme }) => `${theme.spacing.xxs} ${theme.spacing.s}`};
   max-height: 2rem;
   border-radius: 3rem;
@@ -91,7 +91,7 @@ const ImagesContainer = styled.div`
   & img {
     border-radius: 1rem;
     border: 3px solid;
-    border-color: ${({ theme }) => theme.colors.backgroundTertiary};
+    border-color: ${({ theme }) => theme.colors.border};
     opacity: 0.9;
     transition: opacity 0.25s;
 
@@ -105,7 +105,8 @@ const Description = styled.p`
   font: ${({ theme }) => theme.fonts.body};
   color: ${({ theme }) => theme.colors.bodyText};
   padding-bottom: ${({ theme }) => theme.spacing.xxl};
-  border-bottom: 1px solid ${({ theme }) => theme.colors.backgroundTertiary};
+  border-bottom: 1px solid;
+  border-color: ${({ theme }) => theme.colors.border};
 `;
 
 const Tags = styled.p`
