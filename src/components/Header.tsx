@@ -14,7 +14,7 @@ const Header = () => {
         <LanguageSwitcher />
       </PageOptions>
       <PageHeading>
-        <HeadingImage src={mikko} />
+        <HeadingImage src={mikko} alt="Mikko Larinen" />
         <HeadingTitle>{t("header")}</HeadingTitle>
       </PageHeading>
       <Tagline>{t("tagline")}</Tagline>
