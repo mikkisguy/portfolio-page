@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
-import PORTFOLIO_IMAGES from "./portfolioImages";
+import PORTFOLIO_IMAGES from "../../shared/portfolioImages";
 
 type PortfolioItemProps = {
   isHobbyProject?: boolean;
