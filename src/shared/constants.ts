@@ -13,7 +13,14 @@ export const ITEMS_META: {
   {
     isHobbyProject: false,
     imageSlug: "netvisor",
-    tags: ["React", "TypeScript", "C#", "DevOps", "Playwright", "End-To-End"],
+    tags: [
+      "React",
+      "TypeScript",
+      "C#",
+      "Playwright",
+      "End-To-End Testing",
+      "DevOps",
+    ],
   },
   {
     isHobbyProject: false,
@@ -23,7 +30,7 @@ export const ITEMS_META: {
   {
     isHobbyProject: true,
     imageSlug: "mikkisfi",
-    tags: ["React", "Express", "TypeScript", "PostgreSQL", "nginx"],
+    tags: ["React", "Express", "TypeScript", "PostgreSQL", "nginx", "Linux"],
   },
   {
     isHobbyProject: true,
@@ -44,6 +51,6 @@ export const ITEMS_META: {
   {
     isHobbyProject: true,
     imageSlug: "discord-yhteiso",
-    tags: ["Svelte", "TypeScript", "API", "PHP", "MariaDB"],
+    tags: ["Svelte", "TypeScript", "API", "PHP", "MariaDB", "Modular"],
   },
 ];

@@ -19,7 +19,7 @@ const finnish: TranslationResource = {
     {
       title: "Netvisor",
       description:
-        "Työskentelin ensisijaisesti React-palikoiden kehityksen parissa. Ylläpidin yhdessä muiden kanssa sisäistä komponenttikirjastoa sekä tiimissä toteutin mm. online-ostamisen kanavaa.",
+        "Työskentelin ensisijaisesti React-palikoiden kehityksen parissa. Ylläpidin yhdessä muiden kehittäjien kanssa sisäistä komponenttikirjastoa sekä tiimin kanssa toteutin mm. Netvisorin ostamista verkosta.",
     },
     {
       title: "Lahti-Huvilat / Hallitilaa.fi",
@@ -29,22 +29,22 @@ const finnish: TranslationResource = {
     {
       title: "Mikkis.fi",
       description:
-        "Jalokiveni ja ikuisuusprojektini, painotuksena responsiivisuus ja saavutettavuus.",
+        "Jalokiveni ja ikuisuusprojektini, painotuksena design, responsiivisuus ja saavutettavuus. Myös verkkoliikenteen tasaamiseen ja turvallisuuteen kiinnitetään huomiota, isäntäjärjestelmää myöten.",
     },
     {
       title: "MikkisGuy",
       description:
-        "Nimimerkkini jonka alla olen tehnyt videotuotantoa sekä livestriimausta. Graafinen ilme myös omaa käsialaa.",
+        "Nimimerkkini jonka alla olen tehnyt pääosin peleihin liittyvää videotuotantoa sekä livestriimausta. Suunnittelu, grafiikka ja muut osat tehty itse.",
     },
     {
       title: "Peliruukku",
       description:
-        "Peliyhteisö johon liittyi nettisivut, videotuotanto sekä netin välityksellä erilaiset tapahtumat ja aktiviteetit. Tein videoita, koodiprojekteja sekä toimin järjestäjänä. Suunnittelin yhteisön graafisen ilmeen.",
+        "Peliyhteisö johon liittyi tekemäni nettisivut hallintoineen, videotuotanto sekä netin välityksellä erilaiset tapahtumat ja aktiviteetit.",
     },
     {
       title: "Discord-yhteisön tilastot",
       description:
-        "Tehty tilastosivu ja Discord-botti joka kerää sanamääriä sekä mm. logittaa kanavia. Tietoja sensuroitu yksityisyyden vuoksi.",
+        "Tehty tilastosivu ja Discord-botti joka kerää sanamääriä sekä mm. logittaa kanavia. Dataa havainnollistettu erilaisten kaavioiden avulla. Tietoja sensuroitu yksityisyyden vuoksi.",
     },
   ],
 };

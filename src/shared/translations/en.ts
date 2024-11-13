@@ -19,32 +19,32 @@ const english: TranslationResource = {
     {
       title: "Netvisor",
       description:
-        "Työskentelin ensisijaisesti React-palikoiden kehityksen parissa. Ylläpidin yhdessä muiden kanssa sisäistä komponenttikirjastoa sekä tiimissä toteutin mm. online-ostamisen kanavaa.",
+        "I worked primarily on the development of React components. For example, I maintained the internal component library alongside other developers and implemented the purchase channel for Netvisor with our team.",
     },
     {
       title: "Lahti-Huvilat / Hallitilaa.fi",
       description:
-        "Hommiini kuului mm. nettisivujen ylläpito, myynti-ilmotusten laatiminen sekä yleinen IT-tuki.",
+        "My work included maintaining the company website, preparing sales announcements and general IT support.",
     },
     {
       title: "Mikkis.fi",
       description:
-        "Jalokiveni ja ikuisuusprojektini, painotuksena responsiivisuus ja saavutettavuus.",
+        "Personal forever project, focused on design, responsiveness and accessibility. I also work on optimizing network traffic and ensuring security, including the parent system.",
     },
     {
       title: "MikkisGuy",
       description:
-        "Nimimerkkini jonka alla olen tehnyt videotuotantoa sekä livestriimausta. Graafinen ilme myös omaa käsialaa.",
+        "My username for video production and livestreaming which are primarly focused on gaming. Planning, graphics and other parts are done by me.",
     },
     {
       title: "Peliruukku",
       description:
-        "Peliyhteisö johon liittyi nettisivut, videotuotanto sekä netin välityksellä erilaiset tapahtumat ja aktiviteetit. Tein videoita, koodiprojekteja sekä toimin järjestäjänä. Suunnittelin yhteisön graafisen ilmeen.",
+        "A gaming community where I worked on the website with admin panel, video production, livestreaming and various events and activities via the internet.",
     },
     {
-      title: "Discord-yhteisön tilastot",
+      title: "Discord community stats",
       description:
-        "Tehty tilastosivu ja Discord-botti joka kerää sanamääriä sekä mm. logittaa kanavia. Tietoja sensuroitu yksityisyyden vuoksi.",
+        "I made a statistics page and a Discord bot that collects word counts, logs text channels and various other things. Data is shown using various charts. Parts of the information is redacted for privacy reasons.",
     },
   ],
 };
