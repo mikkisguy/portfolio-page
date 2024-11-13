@@ -10,6 +10,12 @@ import lahtihuvilat3Thumb from "../assets/images/items/lahtihuvilat-hallitilaafi
 import lahtihuvilat1 from "../assets/images/items/lahtihuvilat-hallitilaafi-1.webp";
 import lahtihuvilat2 from "../assets/images/items/lahtihuvilat-hallitilaafi-2.webp";
 import lahtihuvilat3 from "../assets/images/items/lahtihuvilat-hallitilaafi-3.webp";
+import mikkisfi1Thumb from "../assets/images/items/mikkisfi-1-thumb.webp";
+import mikkisfi2Thumb from "../assets/images/items/mikkisfi-2-thumb.webp";
+import mikkisfi3Thumb from "../assets/images/items/mikkisfi-3-thumb.webp";
+import mikkisfi1 from "../assets/images/items/mikkisfi-1.webp";
+import mikkisfi2 from "../assets/images/items/mikkisfi-2.webp";
+import mikkisfi3 from "../assets/images/items/mikkisfi-3.webp";
 import peliruukku1Thumb from "../assets/images/items/peliruukku-1-thumb.webp";
 import peliruukku2Thumb from "../assets/images/items/peliruukku-2-thumb.webp";
 import peliruukku3Thumb from "../assets/images/items/peliruukku-3-thumb.webp";
@@ -34,6 +40,12 @@ const portfolioImages: Images = {
   "lahtihuvilat-hallitilaafi-1": lahtihuvilat1,
   "lahtihuvilat-hallitilaafi-2": lahtihuvilat2,
   "lahtihuvilat-hallitilaafi-3": lahtihuvilat3,
+  "mikkisfi-1-thumb": mikkisfi1Thumb,
+  "mikkisfi-2-thumb": mikkisfi2Thumb,
+  "mikkisfi-3-thumb": mikkisfi3Thumb,
+  "mikkisfi-1": mikkisfi1,
+  "mikkisfi-2": mikkisfi2,
+  "mikkisfi-3": mikkisfi3,
   "peliruukku-1-thumb": peliruukku1Thumb,
   "peliruukku-2-thumb": peliruukku2Thumb,
   "peliruukku-3-thumb": peliruukku3Thumb,
