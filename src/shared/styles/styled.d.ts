@@ -21,9 +21,7 @@ type FontStyles = {
   tagline: string;
   body: string;
   bodyBold: string;
-  bodyItalic: string;
   meta: string;
-  metaBold: string;
 };
 
 export type ColorStyles = {
@@ -35,8 +33,6 @@ export type ColorStyles = {
   bodyText: string;
   bodyTextSecondary: string;
   bodyTextTertiary: string;
-  highlight: string;
-  outline: string;
   accent: string;
   shadow: string;
   linkText: string;

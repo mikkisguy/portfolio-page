@@ -27,7 +27,7 @@ const PortfolioItem = (props: PortfolioItemProps) => {
   };
 
   return (
-    <div>
+    <ItemContainer>
       <ItemHeader>
         <CategoryTag>
           {props.isHobbyProject
@@ -43,11 +43,18 @@ const PortfolioItem = (props: PortfolioItemProps) => {
       <Tags>
         {t("portfolioItem.tags")}: {props.tags.join(", ")}
       </Tags>
-    </div>
+    </ItemContainer>
   );
 };
 
 export default PortfolioItem;
+
+const ItemContainer = styled.div`
+  background-color: ${({ theme }) => theme.colors.backgroundSecondary};
+  padding: ${({ theme }) => `${theme.spacing.xl} ${theme.spacing.xxl}`};
+  box-shadow: ${({ theme }) => theme.colors.shadow} 0 0 0.3rem 0 inset;
+  border-radius: 3rem;
+`;
 
 const ItemHeader = styled.div`
   display: flex;
@@ -59,8 +66,9 @@ const ItemHeader = styled.div`
 const CategoryTag = styled.span`
   font: ${({ theme }) => theme.fonts.meta};
   color: ${({ theme }) => theme.colors.bodyTextSecondary};
-  background-color: ${({ theme }) => theme.colors.backgroundTertiary};
-  padding: ${({ theme }) => `${theme.spacing.xs} ${theme.spacing.l}`};
+  border: 3px solid;
+  border-color: ${({ theme }) => theme.colors.backgroundTertiary};
+  padding: ${({ theme }) => `${theme.spacing.xxs} ${theme.spacing.s}`};
   max-height: 2rem;
   border-radius: 3rem;
   margin-top: ${({ theme }) => theme.spacing.l};
@@ -77,17 +85,31 @@ const ImagesContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: ${({ theme }) => theme.spacing.xxs};
+  gap: ${({ theme }) => theme.spacing.xl};
+  margin-bottom: ${({ theme }) => theme.spacing.xxl};
+
+  & img {
+    border-radius: 1rem;
+    border: 3px solid;
+    border-color: ${({ theme }) => theme.colors.backgroundTertiary};
+    opacity: 0.9;
+    transition: opacity 0.25s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 `;
 
 const Description = styled.p`
   font: ${({ theme }) => theme.fonts.body};
   color: ${({ theme }) => theme.colors.bodyText};
-  padding: ${({ theme }) => theme.spacing.l} 0;
+  padding-bottom: ${({ theme }) => theme.spacing.xxl};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.backgroundTertiary};
 `;
 
 const Tags = styled.p`
   font: ${({ theme }) => theme.fonts.meta};
   color: ${({ theme }) => theme.colors.bodyTextSecondary};
+  padding-top: ${({ theme }) => theme.spacing.l};
 `;
