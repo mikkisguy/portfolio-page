@@ -20,4 +20,8 @@ export type TranslationResource = {
     hobbyProject: string;
     workProject: string;
   };
+  portfolioItems: {
+    title: string;
+    description: string;
+  }[];
 };
