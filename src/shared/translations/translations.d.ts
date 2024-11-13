@@ -6,6 +6,11 @@ declare module "i18next" {
   }
 }
 
+export type PortfolioItems = {
+  title: string;
+  description: string;
+}[];
+
 export type TranslationResource = {
   underDevelopment: string;
   changeLanguage: string;
@@ -20,8 +25,5 @@ export type TranslationResource = {
     hobbyProject: string;
     workProject: string;
   };
-  portfolioItems: {
-    title: string;
-    description: string;
-  }[];
+  portfolioItems: PortfolioItems;
 };

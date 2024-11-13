@@ -1,18 +1,28 @@
+import { useTranslation } from "react-i18next";
 import Divider from "./shared/Divider";
 import PortfolioItem from "./shared/PortfolioItem";
+import { ITEMS_META } from "../shared/constants";
+import { PortfolioItems } from "../shared/translations/translations";
 
 const Content = () => {
-  return (
+  const { t } = useTranslation();
+
+  const portfolioItems = t("portfolioItems", {
+    returnObjects: true,
+  }) as PortfolioItems;
+
+  return portfolioItems?.map((item, index) => (
     <>
       <PortfolioItem
-        title="Peliruukku"
-        description="Peliyhteisö lorem ipsum dolor sit amet"
-        tags={["PHP", "MySQL", "video"]}
-        isHobbyProject
+        key={index}
+        title={item.title}
+        description={item.description}
+        tags={ITEMS_META[index].tags}
+        isHobbyProject={ITEMS_META[index].isHobbyProject}
       />
       <Divider />
     </>
-  );
+  ));
 };
 
 export default Content;
