@@ -34,7 +34,7 @@ const finnish: TranslationResource = {
     {
       title: "MikkisGuy",
       description:
-        "Nimimerkkini jonka alla olen tehnyt pääosin peleihin liittyvää videotuotantoa sekä livestriimausta. Suunnittelu, grafiikka ja muut osat tehty itse.",
+        "Nimimerkkini jonka alla olen tehnyt peleihin ja elämääni liittyvää videotuotantoa sekä livestriimausta. Suunnittelu, grafiikka ja muut osat tehty itse.",
     },
     {
       title: "Peliruukku",

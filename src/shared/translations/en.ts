@@ -34,7 +34,7 @@ const english: TranslationResource = {
     {
       title: "MikkisGuy",
       description:
-        "My username for video production and livestreaming which are primarly focused on gaming. Planning, graphics and other parts are done by me.",
+        "My username for video production and livestreaming which are focused on gaming and my life. Planning, graphics and other parts are done by me.",
     },
     {
       title: "Peliruukku",
