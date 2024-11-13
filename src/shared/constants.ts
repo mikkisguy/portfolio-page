@@ -5,24 +5,34 @@ export const TRANSLATIONS = {
   EN: "en",
 };
 
-export const ITEMS_META: { tags: string[]; isHobbyProject: boolean }[] = [
+export const ITEMS_META: {
+  isHobbyProject: boolean;
+  imageSlug: string;
+  tags: string[];
+}[] = [
   {
+    isHobbyProject: false,
+    imageSlug: "netvisor",
     tags: ["React", "TypeScript", "C#", "DevOps", "Playwright", "End-To-End"],
-    isHobbyProject: false,
   },
   {
+    isHobbyProject: false,
+    imageSlug: "lahtihuvilat-hallitilaafi",
     tags: ["HTML/CSS", "FTP", "CPanel", "Microsoft Windows"],
-    isHobbyProject: false,
   },
   {
+    isHobbyProject: true,
+    imageSlug: "mikkisfi",
     tags: ["React", "Express", "TypeScript", "PostgreSQL", "nginx"],
-    isHobbyProject: true,
   },
   {
+    isHobbyProject: true,
+    imageSlug: "mikkisguy",
     tags: ["Adobe Photoshop", "Adobe Premiere", "DaVinci Resolve"],
-    isHobbyProject: true,
   },
   {
+    isHobbyProject: true,
+    imageSlug: "peliruukku",
     tags: [
       "PHP",
       "MySQL",
@@ -30,10 +40,10 @@ export const ITEMS_META: { tags: string[]; isHobbyProject: boolean }[] = [
       "Adobe Premiere",
       "DaVinci Resolve",
     ],
-    isHobbyProject: true,
   },
   {
-    tags: ["Svelte", "TypeScript", "API", "PHP", "MariaDB"],
     isHobbyProject: true,
+    imageSlug: "discord-yhteiso",
+    tags: ["Svelte", "TypeScript", "API", "PHP", "MariaDB"],
   },
 ];

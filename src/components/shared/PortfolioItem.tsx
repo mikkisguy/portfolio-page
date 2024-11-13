@@ -5,6 +5,7 @@ import portfolioImages from "./portfolioImages";
 type PortfolioItemProps = {
   isHobbyProject?: boolean;
   title: string;
+  imageSlug: string;
   description: string;
   tags: string[];
 };
@@ -19,16 +20,11 @@ const PortfolioItem = (props: PortfolioItemProps) => {
 
     const images: Images = portfolioImages;
     // Example: peliruukku-1-thumb
-    const thumbImageName = `${props.title.replace(/\s+/g, "-").toLowerCase()}-${index}-thumb`;
+    const thumbImageName = `${props.imageSlug}-${index}-thumb`;
+    // Example: Peliruukku image 1
+    const imageAltText = `${props.title} ${t("portfolioItem.image")} ${index}`;
 
-    return (
-      <img
-        key={index}
-        src={images[thumbImageName]}
-        // Example: Peliruukku image 1
-        alt={`${props.title} ${t("portfolioItem.image")} ${index}`}
-      />
-    );
+    return <img key={index} src={images[thumbImageName]} alt={imageAltText} />;
   };
 
   return (

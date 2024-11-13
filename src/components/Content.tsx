@@ -16,6 +16,7 @@ const Content = () => {
       <PortfolioItem
         key={index}
         title={item.title}
+        imageSlug={ITEMS_META[index].imageSlug}
         description={item.description}
         tags={ITEMS_META[index].tags}
         isHobbyProject={ITEMS_META[index].isHobbyProject}
