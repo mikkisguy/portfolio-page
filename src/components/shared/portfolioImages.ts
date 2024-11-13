@@ -11,7 +11,11 @@ import peliruukku1 from "../../assets/images/items/peliruukku-1.webp";
 import peliruukku2 from "../../assets/images/items/peliruukku-2.webp";
 import peliruukku3 from "../../assets/images/items/peliruukku-3.webp";
 
-const PORTFOLIO_IMAGES = {
+type Images = {
+  [key: string]: string;
+};
+
+const PORTFOLIO_IMAGES: Images = {
   "netvisor-1-thumb": netvisor1Thumb,
   "netvisor-2-thumb": netvisor2Thumb,
   "netvisor-3-thumb": netvisor3Thumb,

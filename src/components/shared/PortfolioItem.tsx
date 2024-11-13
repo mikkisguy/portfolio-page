@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
-import portfolioImages from "./portfolioImages";
+import PORTFOLIO_IMAGES from "./portfolioImages";
 
 type PortfolioItemProps = {
   isHobbyProject?: boolean;
@@ -14,17 +14,18 @@ const PortfolioItem = (props: PortfolioItemProps) => {
   const { t } = useTranslation();
 
   const getImageElement = (index: number) => {
-    type Images = {
-      [key: string]: string;
-    };
-
-    const images: Images = portfolioImages;
     // Example: peliruukku-1-thumb
     const thumbImageName = `${props.imageSlug}-${index}-thumb`;
     // Example: Peliruukku image 1
     const imageAltText = `${props.title} ${t("portfolioItem.image")} ${index}`;
 
-    return <img key={index} src={images[thumbImageName]} alt={imageAltText} />;
+    return (
+      <img
+        key={index}
+        src={PORTFOLIO_IMAGES[thumbImageName]}
+        alt={imageAltText}
+      />
+    );
   };
 
   return (
