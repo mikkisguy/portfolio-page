@@ -32,7 +32,6 @@ export type ColorStyles = {
   heading: string;
   bodyText: string;
   bodyTextSecondary: string;
-  bodyTextTertiary: string;
   accent: string;
   shadow: string;
   linkText: string;

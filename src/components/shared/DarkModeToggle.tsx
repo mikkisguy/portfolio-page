@@ -88,13 +88,13 @@ const Toggle = styled.div`
   font-size: 1.2rem;
 
   &:hover {
-    outline: 2px solid ${({ theme }) => theme.colors.outline}80;
+    outline: 2px solid ${({ theme }) => theme.colors.accent}80;
   }
 `;
 
 const ToggleForm = styled.form`
   &:focus-within ${Toggle} {
-    outline: 2px solid ${({ theme }) => theme.colors.outline}80;
+    outline: 2px solid ${({ theme }) => theme.colors.accent}80;
   }
 `;
 

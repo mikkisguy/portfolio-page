@@ -50,6 +50,6 @@ const LanguageButton = styled.button`
 
   &:hover,
   &:focus {
-    outline: 2px solid ${({ theme }) => theme.colors.outline}80;
+    outline: 2px solid ${({ theme }) => theme.colors.accent}80;
   }
 `;
