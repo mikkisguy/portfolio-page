@@ -16,6 +16,12 @@ import mikkisfi3Thumb from "../assets/images/items/mikkisfi-3-thumb.webp";
 import mikkisfi1 from "../assets/images/items/mikkisfi-1.webp";
 import mikkisfi2 from "../assets/images/items/mikkisfi-2.webp";
 import mikkisfi3 from "../assets/images/items/mikkisfi-3.webp";
+import mikkisguy1Thumb from "../assets/images/items/mikkisguy-1-thumb.webp";
+import mikkisguy2Thumb from "../assets/images/items/mikkisguy-2-thumb.webp";
+import mikkisguy3Thumb from "../assets/images/items/mikkisguy-3-thumb.webp";
+import mikkisguy1 from "../assets/images/items/mikkisguy-1.webp";
+import mikkisguy2 from "../assets/images/items/mikkisguy-2.webp";
+import mikkisguy3 from "../assets/images/items/mikkisguy-3.webp";
 import peliruukku1Thumb from "../assets/images/items/peliruukku-1-thumb.webp";
 import peliruukku2Thumb from "../assets/images/items/peliruukku-2-thumb.webp";
 import peliruukku3Thumb from "../assets/images/items/peliruukku-3-thumb.webp";
@@ -46,6 +52,12 @@ const portfolioImages: Images = {
   "mikkisfi-1": mikkisfi1,
   "mikkisfi-2": mikkisfi2,
   "mikkisfi-3": mikkisfi3,
+  "mikkisguy-1-thumb": mikkisguy1Thumb,
+  "mikkisguy-2-thumb": mikkisguy2Thumb,
+  "mikkisguy-3-thumb": mikkisguy3Thumb,
+  "mikkisguy-1": mikkisguy1,
+  "mikkisguy-2": mikkisguy2,
+  "mikkisguy-3": mikkisguy3,
   "peliruukku-1-thumb": peliruukku1Thumb,
   "peliruukku-2-thumb": peliruukku2Thumb,
   "peliruukku-3-thumb": peliruukku3Thumb,
