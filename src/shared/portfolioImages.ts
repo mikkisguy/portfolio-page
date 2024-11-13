@@ -15,7 +15,7 @@ type Images = {
   [key: string]: string;
 };
 
-const PORTFOLIO_IMAGES: Images = {
+const portfolioImages: Images = {
   "netvisor-1-thumb": netvisor1Thumb,
   "netvisor-2-thumb": netvisor2Thumb,
   "netvisor-3-thumb": netvisor3Thumb,
@@ -30,4 +30,16 @@ const PORTFOLIO_IMAGES: Images = {
   "peliruukku-3": peliruukku3,
 };
 
-export default PORTFOLIO_IMAGES;
+const getPortfolioImage = (
+  imageSlug: string,
+  imageIndex: number,
+  isThumb: boolean
+): string => {
+  if (isThumb) {
+    return portfolioImages[`${imageSlug}-${imageIndex}-thumb`];
+  }
+
+  return portfolioImages[`${imageSlug}-${imageIndex}`];
+};
+
+export default getPortfolioImage;
