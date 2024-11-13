@@ -39,7 +39,7 @@ const finnish: TranslationResource = {
     {
       title: "Peliruukku",
       description:
-        "Peliyhteisö johon liittyi tekemäni nettisivut hallintoineen, videotuotanto sekä netin välityksellä erilaiset tapahtumat ja aktiviteetit.",
+        "Peliyhteisö johon liittyi tekemäni nettisivut hallintoineen, videotuotanto sekä netin välityksellä erilaiset tapahtumat ja aktiviteetit. Toiminnassa 2012-2024.",
     },
     {
       title: "Discord-yhteisön tilastot",

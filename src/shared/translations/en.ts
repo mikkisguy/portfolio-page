@@ -39,7 +39,7 @@ const english: TranslationResource = {
     {
       title: "Peliruukku",
       description:
-        "A gaming community where I worked on the website with admin panel, video production, livestreaming and various events and activities via the internet.",
+        "A gaming community where I worked on the website with admin panel, video production, livestreaming and various events and activities via the internet. Active from 2012 to 2024.",
     },
     {
       title: "Discord community stats",
