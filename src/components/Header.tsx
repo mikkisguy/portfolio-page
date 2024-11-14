@@ -48,7 +48,8 @@ const PageHeading = styled.div`
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.bp.small}) {
-    padding: 0 ${({ theme }) => theme.spacing.xxxl};
+    padding-left: ${({ theme }) => theme.spacing.xxxl};
+    padding-right: ${({ theme }) => theme.spacing.xxxl};
   }
 `;
 
