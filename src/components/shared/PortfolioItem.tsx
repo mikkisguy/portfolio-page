@@ -1,10 +1,8 @@
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
-import getPortfolioImage from "../../shared/portfolioImages";
-import { useCallback, useState } from "react";
-import ImageViewer from "react-simple-image-viewer";
+import ItemImages from "./ItemImages";
 
-type PortfolioItemProps = {
+export type PortfolioItemProps = {
   isHobbyProject?: boolean;
   title: string;
   imageSlug: string;
@@ -14,32 +12,6 @@ type PortfolioItemProps = {
 
 const PortfolioItem = (props: PortfolioItemProps) => {
   const { t } = useTranslation();
-  const [currentImage, setCurrentImage] = useState(0);
-  const [isViewerOpen, setIsViewerOpen] = useState(false);
-  const imageIndexes = [1, 2, 3];
-  const imagePaths = imageIndexes.map((value) =>
-    getPortfolioImage(props.imageSlug, value)
-  );
-
-  const openImageViewer = useCallback((index: number) => {
-    setCurrentImage(index);
-    setIsViewerOpen(true);
-  }, []);
-
-  const getImageElement = (index: number) => {
-    // Example: Peliruukku image 1
-    const imageAltText = `${props.title} ${t("portfolioItem.image")} ${index}`;
-
-    return (
-      <img
-        key={index}
-        src={getPortfolioImage(props.imageSlug, index, true)}
-        alt={imageAltText}
-        onClick={() => openImageViewer(index - 1)}
-        className="thumbnail"
-      />
-    );
-  };
 
   return (
     <ItemContainer>
@@ -51,22 +23,7 @@ const PortfolioItem = (props: PortfolioItemProps) => {
         </CategoryTag>
         <Title>{props.title}</Title>
       </ItemHeader>
-      <ImagesContainer>
-        {imageIndexes.map((value) => getImageElement(value))}
-
-        {isViewerOpen && (
-          <ImageViewer
-            src={imagePaths}
-            currentIndex={currentImage}
-            disableScroll
-            closeOnClickOutside
-            onClose={() => {
-              setCurrentImage(0);
-              setIsViewerOpen(false);
-            }}
-          />
-        )}
-      </ImagesContainer>
+      <ItemImages imageSlug={props.imageSlug} title={props.title} />
       <Description>{props.description}</Description>
       <Tags>
         {t("portfolioItem.tags")}: {props.tags.join(", ")}
@@ -107,32 +64,6 @@ const Title = styled.h2`
   color: ${({ theme }) => theme.colors.heading};
   margin-top: 0;
   margin-bottom: ${({ theme }) => theme.spacing.xl};
-`;
-
-const ImagesContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: ${({ theme }) => theme.spacing.xl};
-  margin-bottom: ${({ theme }) => theme.spacing.xxl};
-
-  & .thumbnail {
-    border-radius: 1rem;
-    border: 3px solid;
-    border-color: ${({ theme }) => theme.colors.border};
-    opacity: 1;
-    transition: opacity 0.5s;
-
-    cursor: pointer;
-
-    &:hover {
-      opacity: 0.7;
-    }
-  }
-
-  & .react-simple-image-viewer__modal {
-    background-color: ${({ theme }) => theme.colors.backgroundImageViewer};
-  }
 `;
 
 const Description = styled.p`
