@@ -4,11 +4,11 @@ const english: TranslationResource = {
   underDevelopment: "Page is under development!",
   changeLanguage: "Vaihda suomen kielelle",
   changeTheme: "Switch page theme",
-  darkMode: "Dark mode",
+  darkMode: "Dark Mode",
   header: "Helou! I'm Mikko Larinen, nice to meet you.",
   tagline:
     "I do web development and video editing. I like to hone the visual side and dive deeper under the hood.",
-  sourceCode: "Source code",
+  sourceCode: "Source Code",
   portfolioItem: {
     image: "image",
     tags: "Tags",
