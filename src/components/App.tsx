@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import Content from "./Content";
 import Footer from "./Footer";
 import Divider from "./Divider";
+import { IS_UNDER_DEVELOPMENT } from "../shared/constants";
 
 const App = () => {
   const { t } = useTranslation();
@@ -14,7 +15,9 @@ const App = () => {
     <ThemeContextProvider>
       <GlobalStyle />
       <PageOuterContainer>
-        <UnderDevelopment>{t("underDevelopment")}</UnderDevelopment>
+        {IS_UNDER_DEVELOPMENT && (
+          <UnderDevelopment>{t("underDevelopment")}</UnderDevelopment>
+        )}
         <PageContainer>
           <Header />
           <Divider />
