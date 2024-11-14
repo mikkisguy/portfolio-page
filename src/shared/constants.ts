@@ -25,8 +25,9 @@ export const ITEMS_META: ItemsMeta[] = [
       "Playwright",
       "End-To-End Testing",
       "DevOps",
+      "Figma",
     ],
-    links: ["https://buy.netvisor.fi"],
+    links: ["https://buy.netvisor.fi/fi?packet=core&turnover=100000"],
   },
   {
     isHobbyProject: false,
