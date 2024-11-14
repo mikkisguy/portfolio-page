@@ -46,6 +46,10 @@ const PageHeading = styled.div`
     flex-direction: column;
     align-items: center;
   }
+
+  @media only screen and (max-width: ${({ theme }) => theme.bp.small}) {
+    padding: 0 ${({ theme }) => theme.spacing.xxxl};
+  }
 `;
 
 const HeadingImage = styled.img`
