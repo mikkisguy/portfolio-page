@@ -12,6 +12,7 @@ const finnish: TranslationResource = {
   portfolioItem: {
     image: "kuva",
     tags: "Avainsanat",
+    links: "Linkit",
     hobbyProject: "Harrastus",
     workProject: "Työ",
   },

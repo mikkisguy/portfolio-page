@@ -12,6 +12,7 @@ const english: TranslationResource = {
   portfolioItem: {
     image: "image",
     tags: "Tags",
+    links: "Links",
     hobbyProject: "Hobby",
     workProject: "Work",
   },

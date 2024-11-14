@@ -8,9 +8,14 @@ const Footer = () => {
     <FooterContainer>
       <FooterText>
         Mikko Larinen - 2024 {" - "}
-        <SourceCodeLink href="https://github.com/mikkisguy/portfolio-page">
+        <a
+          href="https://github.com/mikkisguy/portfolio-page"
+          className="external-link"
+          target="_blank"
+          rel="noreferrer"
+        >
           {t("sourceCode")}
-        </SourceCodeLink>
+        </a>
       </FooterText>
     </FooterContainer>
   );
@@ -26,17 +31,4 @@ const FooterText = styled.p`
   font: ${({ theme }) => theme.fonts.meta};
   color: ${({ theme }) => theme.colors.bodyTextSecondary};
   text-align: center;
-`;
-
-const SourceCodeLink = styled.a`
-  color: ${({ theme }) => theme.colors.bodyTextSecondary};
-  text-decoration-style: dotted;
-  text-decoration-color: ${({ theme }) => theme.colors.linkUnderline};
-  text-decoration-thickness: 1.5px;
-  text-underline-offset: ${({ theme }) => theme.spacing.xxs};
-
-  &:hover,
-  &:focus {
-    text-decoration: none;
-  }
 `;

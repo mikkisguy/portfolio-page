@@ -5,11 +5,14 @@ export const TRANSLATIONS = {
   EN: "en",
 };
 
-export const ITEMS_META: {
+type ItemsMeta = {
   isHobbyProject: boolean;
   imageSlug: string;
   tags: string[];
-}[] = [
+  links?: string[];
+};
+
+export const ITEMS_META: ItemsMeta[] = [
   {
     isHobbyProject: false,
     imageSlug: "netvisor",
@@ -21,6 +24,7 @@ export const ITEMS_META: {
       "End-To-End Testing",
       "DevOps",
     ],
+    links: ["https://buy.netvisor.fi"],
   },
   {
     isHobbyProject: false,
@@ -31,11 +35,19 @@ export const ITEMS_META: {
     isHobbyProject: true,
     imageSlug: "mikkisfi",
     tags: ["React", "Express", "TypeScript", "PostgreSQL", "nginx", "Linux"],
+    links: [
+      "https://preview.mikkis.fi",
+      "https://github.com/mikkisguy/thru-time",
+    ],
   },
   {
     isHobbyProject: true,
     imageSlug: "mikkisguy",
     tags: ["Adobe Photoshop", "Adobe Premiere", "DaVinci Resolve"],
+    links: [
+      "https://www.youtube.com/@MikkisGuy",
+      "https://www.youtube.com/@MikkisGuyArkisto",
+    ],
   },
   {
     isHobbyProject: true,
@@ -47,6 +59,7 @@ export const ITEMS_META: {
       "Adobe Premiere",
       "DaVinci Resolve",
     ],
+    links: ["https://www.youtube.com/@Peliruukku"],
   },
   {
     isHobbyProject: true,

@@ -8,10 +8,28 @@ export type PortfolioItemProps = {
   imageSlug: string;
   description: string;
   tags: string[];
+  links?: string[];
 };
 
 const PortfolioItem = (props: PortfolioItemProps) => {
   const { t } = useTranslation();
+
+  const getLinkElements = (links: string[]) => {
+    return links.map((link, index) => (
+      <>
+        <a
+          key={link}
+          href={link}
+          className="external-link"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {link.replace(/^https?:\/\/(www\.)?/, "")}
+        </a>
+        {index < links.length - 1 && ", "}
+      </>
+    ));
+  };
 
   return (
     <ItemContainer>
@@ -25,9 +43,14 @@ const PortfolioItem = (props: PortfolioItemProps) => {
       </ItemHeader>
       <ItemImages imageSlug={props.imageSlug} title={props.title} />
       <Description>{props.description}</Description>
-      <Tags>
+      <Meta>
         {t("portfolioItem.tags")}: {props.tags.join(", ")}
-      </Tags>
+      </Meta>
+      {props.links && (
+        <Meta>
+          {t("portfolioItem.links")}: {getLinkElements(props.links)}
+        </Meta>
+      )}
     </ItemContainer>
   );
 };
@@ -83,7 +106,7 @@ const Description = styled.p`
   border-color: ${({ theme }) => theme.colors.border};
 `;
 
-const Tags = styled.p`
+const Meta = styled.p`
   font: ${({ theme }) => theme.fonts.meta};
   color: ${({ theme }) => theme.colors.bodyTextSecondary};
   padding-top: ${({ theme }) => theme.spacing.l};

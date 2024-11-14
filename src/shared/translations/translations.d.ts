@@ -22,6 +22,7 @@ export type TranslationResource = {
   portfolioItem: {
     image: string;
     tags: string;
+    links: string;
     hobbyProject: string;
     workProject: string;
   };
