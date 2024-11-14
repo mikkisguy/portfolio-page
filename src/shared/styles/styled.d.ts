@@ -27,6 +27,7 @@ export type ColorStyles = {
   themeIcon: string;
   background: string;
   backgroundSecondary: string;
+  backgroundImageViewer: string;
   heading: string;
   bodyText: string;
   bodyTextSecondary: string;

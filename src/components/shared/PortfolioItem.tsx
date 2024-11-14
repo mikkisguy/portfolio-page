@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import getPortfolioImage from "../../shared/portfolioImages";
+import { useCallback, useState } from "react";
+import ImageViewer from "react-simple-image-viewer";
 
 type PortfolioItemProps = {
   isHobbyProject?: boolean;
@@ -13,6 +15,19 @@ type PortfolioItemProps = {
 const PortfolioItem = (props: PortfolioItemProps) => {
   const { t } = useTranslation();
 
+  const [currentImage, setCurrentImage] = useState(0);
+  const [isViewerOpen, setIsViewerOpen] = useState(false);
+  const images = [
+    getPortfolioImage(props.imageSlug, 1),
+    getPortfolioImage(props.imageSlug, 2),
+    getPortfolioImage(props.imageSlug, 3),
+  ];
+
+  const openImageViewer = useCallback((index: number) => {
+    setCurrentImage(index);
+    setIsViewerOpen(true);
+  }, []);
+
   const getImageElement = (index: number) => {
     // Example: Peliruukku image 1
     const imageAltText = `${props.title} ${t("portfolioItem.image")} ${index}`;
@@ -22,6 +37,8 @@ const PortfolioItem = (props: PortfolioItemProps) => {
         key={index}
         src={getPortfolioImage(props.imageSlug, index, true)}
         alt={imageAltText}
+        onClick={() => openImageViewer(index - 1)}
+        className="thumbnail"
       />
     );
   };
@@ -38,6 +55,19 @@ const PortfolioItem = (props: PortfolioItemProps) => {
       </ItemHeader>
       <ImagesContainer>
         {[1, 2, 3].map((index) => getImageElement(index))}
+
+        {isViewerOpen && (
+          <ImageViewer
+            src={images}
+            currentIndex={currentImage}
+            disableScroll
+            closeOnClickOutside
+            onClose={() => {
+              setCurrentImage(0);
+              setIsViewerOpen(false);
+            }}
+          />
+        )}
       </ImagesContainer>
       <Description>{props.description}</Description>
       <Tags>
@@ -88,16 +118,22 @@ const ImagesContainer = styled.div`
   gap: ${({ theme }) => theme.spacing.xl};
   margin-bottom: ${({ theme }) => theme.spacing.xxl};
 
-  & img {
+  & .thumbnail {
     border-radius: 1rem;
     border: 3px solid;
     border-color: ${({ theme }) => theme.colors.border};
-    opacity: 0.9;
-    transition: opacity 0.25s;
+    opacity: 1;
+    transition: opacity 0.5s;
+
+    cursor: pointer;
 
     &:hover {
-      opacity: 1;
+      opacity: 0.7;
     }
+  }
+
+  & .react-simple-image-viewer__modal {
+    background-color: ${({ theme }) => theme.colors.backgroundImageViewer};
   }
 `;
 

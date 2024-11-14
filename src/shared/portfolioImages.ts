@@ -81,7 +81,7 @@ const portfolioImages: Images = {
 const getPortfolioImage = (
   imageSlug: string,
   imageIndex: number,
-  isThumb: boolean
+  isThumb?: boolean
 ): string => {
   if (isThumb) {
     return portfolioImages[`${imageSlug}-${imageIndex}-thumb`];
