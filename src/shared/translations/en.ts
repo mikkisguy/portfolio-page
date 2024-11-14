@@ -44,7 +44,7 @@ const english: TranslationResource = {
     {
       title: "Discord community stats",
       description:
-        "I made a statistics page and a Discord bot that collects word counts, logs text channels and various other things. Data is shown using various charts. Parts of the information is redacted for privacy reasons.",
+        "I made a statistics page and a Discord bot that collects word counts, logs text channels and various other things. Data is presented using various charts. Parts of the information is redacted for privacy reasons.",
     },
   ],
 };
