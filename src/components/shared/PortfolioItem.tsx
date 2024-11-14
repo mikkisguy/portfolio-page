@@ -14,14 +14,12 @@ type PortfolioItemProps = {
 
 const PortfolioItem = (props: PortfolioItemProps) => {
   const { t } = useTranslation();
-
   const [currentImage, setCurrentImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
-  const images = [
-    getPortfolioImage(props.imageSlug, 1),
-    getPortfolioImage(props.imageSlug, 2),
-    getPortfolioImage(props.imageSlug, 3),
-  ];
+  const imageIndexes = [1, 2, 3];
+  const imagePaths = imageIndexes.map((value) =>
+    getPortfolioImage(props.imageSlug, value)
+  );
 
   const openImageViewer = useCallback((index: number) => {
     setCurrentImage(index);
@@ -54,11 +52,11 @@ const PortfolioItem = (props: PortfolioItemProps) => {
         <Title>{props.title}</Title>
       </ItemHeader>
       <ImagesContainer>
-        {[1, 2, 3].map((index) => getImageElement(index))}
+        {imageIndexes.map((value) => getImageElement(value))}
 
         {isViewerOpen && (
           <ImageViewer
-            src={images}
+            src={imagePaths}
             currentIndex={currentImage}
             disableScroll
             closeOnClickOutside
