@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import DarkModeToggle from "./shared/DarkModeToggle";
-import LanguageSwitcher from "./shared/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 import mikko from "../assets/images/mikko.webp";
+import DarkModeToggle from "./DarkModeToggle";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = () => {
   const { t } = useTranslation();

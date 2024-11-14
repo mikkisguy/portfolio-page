@@ -7,11 +7,11 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ChangeEvent, useContext } from "react";
 import styled from "styled-components";
-import { ColorStyles, ThemeContext } from "../../shared/styles/styled";
-import { themes } from "../../shared/styles/themes";
-import { SiteThemeContext } from "../ThemeContextProvider";
-import { useDarkMode } from "../../shared/utils";
 import { useTranslation } from "react-i18next";
+import { ThemeContext, ColorStyles } from "../shared/styles/styled";
+import { themes } from "../shared/styles/themes";
+import { useDarkMode } from "../shared/useDarkMode";
+import { SiteThemeContext } from "./ThemeContextProvider";
 
 type AwesomeIconType = React.ComponentType<{
   icon: IconDefinition;

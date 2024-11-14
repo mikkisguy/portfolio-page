@@ -35,54 +35,54 @@ import discordYhteiso1 from "../assets/images/items/discord-yhteiso-1.webp";
 import discordYhteiso2 from "../assets/images/items/discord-yhteiso-2.webp";
 import discordYhteiso3 from "../assets/images/items/discord-yhteiso-3.webp";
 
-type Images = {
-  [key: string]: string;
-};
-
-const portfolioImages: Images = {
-  "netvisor-1-thumb": netvisor1Thumb,
-  "netvisor-2-thumb": netvisor2Thumb,
-  "netvisor-3-thumb": netvisor3Thumb,
-  "netvisor-1": netvisor1,
-  "netvisor-2": netvisor2,
-  "netvisor-3": netvisor3,
-  "lahtihuvilat-hallitilaafi-1-thumb": lahtihuvilat1Thumb,
-  "lahtihuvilat-hallitilaafi-2-thumb": lahtihuvilat2Thumb,
-  "lahtihuvilat-hallitilaafi-3-thumb": lahtihuvilat3Thumb,
-  "lahtihuvilat-hallitilaafi-1": lahtihuvilat1,
-  "lahtihuvilat-hallitilaafi-2": lahtihuvilat2,
-  "lahtihuvilat-hallitilaafi-3": lahtihuvilat3,
-  "mikkisfi-1-thumb": mikkisfi1Thumb,
-  "mikkisfi-2-thumb": mikkisfi2Thumb,
-  "mikkisfi-3-thumb": mikkisfi3Thumb,
-  "mikkisfi-1": mikkisfi1,
-  "mikkisfi-2": mikkisfi2,
-  "mikkisfi-3": mikkisfi3,
-  "mikkisguy-1-thumb": mikkisguy1Thumb,
-  "mikkisguy-2-thumb": mikkisguy2Thumb,
-  "mikkisguy-3-thumb": mikkisguy3Thumb,
-  "mikkisguy-1": mikkisguy1,
-  "mikkisguy-2": mikkisguy2,
-  "mikkisguy-3": mikkisguy3,
-  "peliruukku-1-thumb": peliruukku1Thumb,
-  "peliruukku-2-thumb": peliruukku2Thumb,
-  "peliruukku-3-thumb": peliruukku3Thumb,
-  "peliruukku-1": peliruukku1,
-  "peliruukku-2": peliruukku2,
-  "peliruukku-3": peliruukku3,
-  "discord-yhteiso-1-thumb": discordYhteiso1Thumb,
-  "discord-yhteiso-2-thumb": discordYhteiso2Thumb,
-  "discord-yhteiso-3-thumb": discordYhteiso3Thumb,
-  "discord-yhteiso-1": discordYhteiso1,
-  "discord-yhteiso-2": discordYhteiso2,
-  "discord-yhteiso-3": discordYhteiso3,
-};
-
 const getPortfolioImage = (
   imageSlug: string,
   imageIndex: number,
   isThumb?: boolean
 ): string => {
+  type Images = {
+    [key: string]: string;
+  };
+
+  const portfolioImages: Images = {
+    "netvisor-1-thumb": netvisor1Thumb,
+    "netvisor-2-thumb": netvisor2Thumb,
+    "netvisor-3-thumb": netvisor3Thumb,
+    "netvisor-1": netvisor1,
+    "netvisor-2": netvisor2,
+    "netvisor-3": netvisor3,
+    "lahtihuvilat-hallitilaafi-1-thumb": lahtihuvilat1Thumb,
+    "lahtihuvilat-hallitilaafi-2-thumb": lahtihuvilat2Thumb,
+    "lahtihuvilat-hallitilaafi-3-thumb": lahtihuvilat3Thumb,
+    "lahtihuvilat-hallitilaafi-1": lahtihuvilat1,
+    "lahtihuvilat-hallitilaafi-2": lahtihuvilat2,
+    "lahtihuvilat-hallitilaafi-3": lahtihuvilat3,
+    "mikkisfi-1-thumb": mikkisfi1Thumb,
+    "mikkisfi-2-thumb": mikkisfi2Thumb,
+    "mikkisfi-3-thumb": mikkisfi3Thumb,
+    "mikkisfi-1": mikkisfi1,
+    "mikkisfi-2": mikkisfi2,
+    "mikkisfi-3": mikkisfi3,
+    "mikkisguy-1-thumb": mikkisguy1Thumb,
+    "mikkisguy-2-thumb": mikkisguy2Thumb,
+    "mikkisguy-3-thumb": mikkisguy3Thumb,
+    "mikkisguy-1": mikkisguy1,
+    "mikkisguy-2": mikkisguy2,
+    "mikkisguy-3": mikkisguy3,
+    "peliruukku-1-thumb": peliruukku1Thumb,
+    "peliruukku-2-thumb": peliruukku2Thumb,
+    "peliruukku-3-thumb": peliruukku3Thumb,
+    "peliruukku-1": peliruukku1,
+    "peliruukku-2": peliruukku2,
+    "peliruukku-3": peliruukku3,
+    "discord-yhteiso-1-thumb": discordYhteiso1Thumb,
+    "discord-yhteiso-2-thumb": discordYhteiso2Thumb,
+    "discord-yhteiso-3-thumb": discordYhteiso3Thumb,
+    "discord-yhteiso-1": discordYhteiso1,
+    "discord-yhteiso-2": discordYhteiso2,
+    "discord-yhteiso-3": discordYhteiso3,
+  };
+
   if (isThumb) {
     return portfolioImages[`${imageSlug}-${imageIndex}-thumb`];
   }

@@ -1,9 +1,9 @@
 import { t } from "i18next";
 import { useState, useCallback } from "react";
-import getPortfolioImage from "../../shared/portfolioImages";
 import { PortfolioItemProps } from "./PortfolioItem";
 import styled from "styled-components";
 import ImageViewer from "react-simple-image-viewer";
+import getPortfolioImage from "../shared/getPortfolioImage";
 
 const ItemImages = (props: Partial<PortfolioItemProps>) => {
   const [currentImage, setCurrentImage] = useState(0);

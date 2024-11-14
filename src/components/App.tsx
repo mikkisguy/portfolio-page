@@ -3,9 +3,9 @@ import GlobalStyle from "../shared/styles/globalStyle";
 import ThemeContextProvider from "./ThemeContextProvider";
 import Header from "./Header";
 import { useTranslation } from "react-i18next";
-import Divider from "./shared/Divider";
 import Content from "./Content";
 import Footer from "./Footer";
+import Divider from "./Divider";
 
 const App = () => {
   const { t } = useTranslation();

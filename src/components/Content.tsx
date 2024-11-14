@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
-import Divider from "./shared/Divider";
-import PortfolioItem from "./shared/PortfolioItem";
 import { ITEMS_META } from "../shared/constants";
 import { PortfolioItems } from "../shared/translations/translations";
+import PortfolioItem from "./PortfolioItem";
+import Divider from "./Divider";
 
 const Content = () => {
   const { t } = useTranslation();
