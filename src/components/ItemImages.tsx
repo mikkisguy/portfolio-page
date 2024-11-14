@@ -62,6 +62,11 @@ const ImagesContainer = styled.div`
   gap: ${({ theme }) => theme.spacing.xl};
   margin-bottom: ${({ theme }) => theme.spacing.xxl};
 
+  @media only screen and (max-width: ${({ theme }) => theme.bp.narrow}) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   & .thumbnail {
     border-radius: 1rem;
     border: 3px solid;

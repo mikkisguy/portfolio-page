@@ -46,6 +46,11 @@ const ItemHeader = styled.div`
   flex-direction: row;
   gap: ${({ theme }) => theme.spacing.l};
   margin-bottom: ${({ theme }) => theme.spacing.xxs};
+
+  @media only screen and (max-width: ${({ theme }) => theme.bp.narrow}) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `;
 
 const CategoryTag = styled.span`
@@ -64,6 +69,10 @@ const Title = styled.h2`
   color: ${({ theme }) => theme.colors.heading};
   margin-top: 0;
   margin-bottom: ${({ theme }) => theme.spacing.xl};
+
+  @media only screen and (max-width: ${({ theme }) => theme.bp.narrow}) {
+    text-align: center;
+  }
 `;
 
 const Description = styled.p`
