@@ -28,6 +28,12 @@ import peliruukku3Thumb from "../assets/images/items/peliruukku-3-thumb.webp";
 import peliruukku1 from "../assets/images/items/peliruukku-1.webp";
 import peliruukku2 from "../assets/images/items/peliruukku-2.webp";
 import peliruukku3 from "../assets/images/items/peliruukku-3.webp";
+import discordYhteiso1Thumb from "../assets/images/items/discord-yhteiso-1-thumb.webp";
+import discordYhteiso2Thumb from "../assets/images/items/discord-yhteiso-2-thumb.webp";
+import discordYhteiso3Thumb from "../assets/images/items/discord-yhteiso-3-thumb.webp";
+import discordYhteiso1 from "../assets/images/items/discord-yhteiso-1.webp";
+import discordYhteiso2 from "../assets/images/items/discord-yhteiso-2.webp";
+import discordYhteiso3 from "../assets/images/items/discord-yhteiso-3.webp";
 
 type Images = {
   [key: string]: string;
@@ -64,6 +70,12 @@ const portfolioImages: Images = {
   "peliruukku-1": peliruukku1,
   "peliruukku-2": peliruukku2,
   "peliruukku-3": peliruukku3,
+  "discord-yhteiso-1-thumb": discordYhteiso1Thumb,
+  "discord-yhteiso-2-thumb": discordYhteiso2Thumb,
+  "discord-yhteiso-3-thumb": discordYhteiso3Thumb,
+  "discord-yhteiso-1": discordYhteiso1,
+  "discord-yhteiso-2": discordYhteiso2,
+  "discord-yhteiso-3": discordYhteiso3,
 };
 
 const getPortfolioImage = (
