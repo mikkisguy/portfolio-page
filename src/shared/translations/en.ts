@@ -25,7 +25,7 @@ const english: TranslationResource = {
     {
       title: "Lahti-Huvilat / Hallitilaa.fi",
       description:
-        "My work included maintaining the company website, preparing sales announcements and general IT support.",
+        "My work included maintaining the company website, preparing sales announcements and general IT support. I also created a page for the flex space rental business. It includes a contact form and a management page where status of the rentals can be changed.",
     },
     {
       title: "Mikkis.fi",

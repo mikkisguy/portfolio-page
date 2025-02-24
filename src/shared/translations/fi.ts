@@ -25,7 +25,7 @@ const finnish: TranslationResource = {
     {
       title: "Lahti-Huvilat / Hallitilaa.fi",
       description:
-        "Hommiini kuului mm. nettisivujen ylläpito, myynti-ilmotusten laatiminen sekä yleinen IT-tuki.",
+        "Hommiini kuului mm. nettisivujen ylläpito, myynti-ilmotusten laatiminen sekä yleinen IT-tuki. Tein myös sivut hallitilan vuokraustoiminnalle. Siihen kuuluu yhteydenottolomake sekä hallinta jossa vuokrauksien tilaa voi muuttaa.",
     },
     {
       title: "Mikkis.fi",

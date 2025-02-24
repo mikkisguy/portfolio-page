@@ -33,6 +33,7 @@ export const ITEMS_META: ItemsMeta[] = [
     isHobbyProject: false,
     imageSlug: "lahtihuvilat-hallitilaafi",
     tags: ["HTML/CSS", "FTP", "CPanel", "Microsoft Windows"],
+    links: ["https://hallitilaa.fi"],
   },
   {
     isHobbyProject: true,
