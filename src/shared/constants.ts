@@ -1,6 +1,6 @@
 export const IS_DEVELOPMENT = process.env.NODE_ENV === "development";
 
-export const IS_UNDER_DEVELOPMENT = false;
+export const IS_UNDER_DEVELOPMENT = true;
 
 export const TRANSLATIONS = {
   FI: "fi-FI",
