@@ -1,16 +1,9 @@
-import {
-  useState,
-  useEffect,
-  ReactNode,
-  createContext,
-  SetStateAction,
-} from "react";
+import { useState, useEffect, ReactNode, SetStateAction } from "react";
 import { ThemeProvider } from "styled-components";
-import { ColorStyles, ThemeContext } from "../shared/styles/styled";
+import { ColorStyles } from "../shared/styles/styled";
 import { themes, base } from "../shared/styles/themes";
 import React from "react";
-
-export const SiteThemeContext = createContext<ThemeContext | null>(null);
+import { SiteThemeContext } from "./ThemeContext";
 
 type ThemeContextProviderProps = {
   children: ReactNode;

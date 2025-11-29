@@ -8,10 +8,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ChangeEvent, useContext } from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
-import { ThemeContext, ColorStyles } from "../shared/styles/styled";
+import { ColorStyles } from "../shared/styles/styled";
 import { themes } from "../shared/styles/themes";
 import { useDarkMode } from "../shared/useDarkMode";
-import { SiteThemeContext } from "./ThemeContextProvider";
+import { SiteThemeContext, ThemeContext } from "./ThemeContext";
 
 type AwesomeIconType = React.ComponentType<{
   icon: IconDefinition;
