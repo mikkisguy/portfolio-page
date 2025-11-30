@@ -63,6 +63,12 @@ const getPortfolioImage = (
     "mikkisfi-1": mikkisfi1,
     "mikkisfi-2": mikkisfi2,
     "mikkisfi-3": mikkisfi3,
+    "discord-yhteiso-1-thumb": discordYhteiso1Thumb,
+    "discord-yhteiso-2-thumb": discordYhteiso2Thumb,
+    "discord-yhteiso-3-thumb": discordYhteiso3Thumb,
+    "discord-yhteiso-1": discordYhteiso1,
+    "discord-yhteiso-2": discordYhteiso2,
+    "discord-yhteiso-3": discordYhteiso3,
     "mikkisguy-1-thumb": mikkisguy1Thumb,
     "mikkisguy-2-thumb": mikkisguy2Thumb,
     "mikkisguy-3-thumb": mikkisguy3Thumb,
@@ -75,12 +81,6 @@ const getPortfolioImage = (
     "peliruukku-1": peliruukku1,
     "peliruukku-2": peliruukku2,
     "peliruukku-3": peliruukku3,
-    "discord-yhteiso-1-thumb": discordYhteiso1Thumb,
-    "discord-yhteiso-2-thumb": discordYhteiso2Thumb,
-    "discord-yhteiso-3-thumb": discordYhteiso3Thumb,
-    "discord-yhteiso-1": discordYhteiso1,
-    "discord-yhteiso-2": discordYhteiso2,
-    "discord-yhteiso-3": discordYhteiso3,
   };
 
   if (isThumb) {

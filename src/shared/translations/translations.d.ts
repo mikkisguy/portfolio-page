@@ -35,7 +35,7 @@ export type TranslationResource = {
   technicalSkillsExperience: string;
   technologyArea: string;
   proficiencyContext: string;
-  skillsBreakdownTitle: { hidden: string; visible: string };
+  skillsBreakdownLink: string;
   summaryTags: string[];
   skillsBreakdown: SkillsBreakdown;
 };

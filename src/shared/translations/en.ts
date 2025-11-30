@@ -33,6 +33,11 @@ const english: TranslationResource = {
         "Personal forever project, focused on design, responsiveness and accessibility. I also work on optimizing network traffic and ensuring security, including the parent system.",
     },
     {
+      title: "Discord community stats",
+      description:
+        "I made a statistics page and a Discord bot that collects word counts, logs text channels and various other things. Data is presented using various charts. Parts of the information is redacted for privacy reasons.",
+    },
+    {
       title: "MikkisGuy",
       description:
         "My username for video production and livestreaming which are focused on gaming and my life. Planning, graphics and other parts are done by me.",
@@ -42,19 +47,11 @@ const english: TranslationResource = {
       description:
         "A gaming community where I worked on the website with admin panel, video production, livestreaming and various events and activities via the internet. Active from 2012 to 2024.",
     },
-    {
-      title: "Discord community stats",
-      description:
-        "I made a statistics page and a Discord bot that collects word counts, logs text channels and various other things. Data is presented using various charts. Parts of the information is redacted for privacy reasons.",
-    },
   ],
   technicalSkillsExperience: "Technical Skills & Experience",
   technologyArea: "Technology / Area",
-  proficiencyContext: "Proficiency & Context",
-  skillsBreakdownTitle: {
-    hidden: "Show Detailed Technical Breakdown & Self-Assessment",
-    visible: "Hide Detailed Technical Breakdown & Self-Assessment",
-  },
+  proficiencyContext: "Proficiency",
+  skillsBreakdownLink: "Skip to Technical Skills & Experience",
   summaryTags: [
     "React & TypeScript",
     "Netvisor Exp.",

@@ -20,7 +20,7 @@ const finnish: TranslationResource = {
     {
       title: "Netvisor",
       description:
-        "Työskentelin ensisijaisesti React-palikoiden kehityksen parissa. Ylläpidin yhdessä muiden kehittäjien kanssa sisäistä komponenttikirjastoa sekä tiimin kanssa toteutin mm. Netvisorin ostamista verkosta.",
+        "Työskentelin ensisijaisesti React-komponenttien kehityksen parissa. Ylläpidin yhdessä muiden kehittäjien kanssa sisäistä komponenttikirjastoa sekä tiimin kanssa toteutin mm. Netvisorin ostamista verkosta.",
     },
     {
       title: "Lahti-Huvilat / Hallitilaa.fi",
@@ -33,6 +33,11 @@ const finnish: TranslationResource = {
         "Jalokiveni ja ikuisuusprojektini, painotuksena design, responsiivisuus ja saavutettavuus. Myös verkkoliikenteen tasaamiseen ja turvallisuuteen kiinnitetään huomiota, isäntäjärjestelmää myöten.",
     },
     {
+      title: "Discord-yhteisön tilastot",
+      description:
+        "Tehty tilastosivu ja Discord-botti joka kerää sanamääriä sekä mm. logittaa kanavia. Dataa havainnollistettu erilaisten kaavioiden avulla. Tietoja sensuroitu yksityisyyden vuoksi.",
+    },
+    {
       title: "MikkisGuy",
       description:
         "Nimimerkkini jonka alla olen tehnyt peleihin ja elämääni liittyvää videotuotantoa sekä livestriimausta. Suunnittelu, grafiikka ja muut osat tehty itse.",
@@ -42,19 +47,11 @@ const finnish: TranslationResource = {
       description:
         "Peliyhteisö johon liittyi tekemäni nettisivut hallintoineen, videotuotanto sekä netin välityksellä erilaiset tapahtumat ja aktiviteetit. Toiminnassa 2012-2024.",
     },
-    {
-      title: "Discord-yhteisön tilastot",
-      description:
-        "Tehty tilastosivu ja Discord-botti joka kerää sanamääriä sekä mm. logittaa kanavia. Dataa havainnollistettu erilaisten kaavioiden avulla. Tietoja sensuroitu yksityisyyden vuoksi.",
-    },
   ],
   technicalSkillsExperience: "Tekniset taidot ja kokemus",
   technologyArea: "Teknologia / Alue",
-  proficiencyContext: "Pätevyys & Konteksti",
-  skillsBreakdownTitle: {
-    hidden: "Näytä yksityiskohtainen tekninen erittely ja itsearviointi",
-    visible: "Piilota yksityiskohtainen tekninen erittely ja itsearviointi",
-  },
+  proficiencyContext: "Pätevyys",
+  skillsBreakdownLink: "Siirry teknisiin taitoihin ja kokemukseen",
   summaryTags: [
     "React & TypeScript",
     "Netvisor kokemus",
@@ -82,7 +79,7 @@ const finnish: TranslationResource = {
       ],
     },
     {
-      category: "Full Stack & Backend",
+      category: "Full Stack ja Backend",
       skills: [
         {
           area: "Node.js",
@@ -93,7 +90,7 @@ const finnish: TranslationResource = {
       ],
     },
     {
-      category: "Laadunvarmistus & operatiiviset taidot",
+      category: "Laadunvarmistus ja operatiiviset taidot",
       skills: [
         { area: "Testaus", level: "Keskitaso (Playwright E2E, Postman)" },
         {
@@ -102,7 +99,7 @@ const finnish: TranslationResource = {
         },
         {
           area: "Git / työnkulku",
-          level: "Ammattimainen rutiini (koodin tarkistukset, haarautuminen)",
+          level: "Ammattimainen rutiini (koodin tarkistukset, haarat)",
         },
         {
           area: "AI-tehostettu työnkulku",

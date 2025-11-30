@@ -1,6 +1,6 @@
 export const IS_DEVELOPMENT = process.env.NODE_ENV === "development";
 
-export const IS_UNDER_DEVELOPMENT = true;
+export const IS_UNDER_DEVELOPMENT = false;
 
 export const TRANSLATIONS = {
   FI: "fi-FI",
@@ -46,6 +46,11 @@ export const ITEMS_META: ItemsMeta[] = [
   },
   {
     isHobbyProject: true,
+    imageSlug: "discord-yhteiso",
+    tags: ["Svelte", "TypeScript", "API", "PHP", "MariaDB", "Modular"],
+  },
+  {
+    isHobbyProject: true,
     imageSlug: "mikkisguy",
     tags: ["Adobe Photoshop", "Adobe Premiere", "DaVinci Resolve"],
     links: [
@@ -64,10 +69,5 @@ export const ITEMS_META: ItemsMeta[] = [
       "DaVinci Resolve",
     ],
     links: ["https://www.youtube.com/@Peliruukku"],
-  },
-  {
-    isHobbyProject: true,
-    imageSlug: "discord-yhteiso",
-    tags: ["Svelte", "TypeScript", "API", "PHP", "MariaDB", "Modular"],
   },
 ];

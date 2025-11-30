@@ -27,6 +27,7 @@ export type ColorStyles = {
   themeIcon: string;
   background: string;
   backgroundSecondary: string;
+  backgroundTernary: string;
   backgroundImageViewer: string;
   heading: string;
   bodyText: string;
@@ -64,9 +65,4 @@ export type BaseStyles = {
   transition: TransitionStyles;
   fonts: FontStyles;
   bp: Breakpoints;
-};
-
-export type ThemeContext = {
-  currentTheme: ColorStyles;
-  setCurrentTheme: (currentTheme: ColorStyles) => void;
 };

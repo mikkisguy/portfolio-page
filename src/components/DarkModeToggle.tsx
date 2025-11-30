@@ -82,10 +82,10 @@ const Toggle = styled.div`
   background-color: ${({ theme }) => theme.colors.backgroundSecondary};
   box-shadow: ${({ theme }) => theme.colors.shadow} 0 0 0.3rem 0 inset;
   border-radius: 3rem;
-  height: 2rem;
+  height: 2.3rem;
   transition: background-color 0.25s;
-  width: 4.5rem;
-  font-size: 1.2rem;
+  width: 5.1;
+  font-size: 1.4rem;
 
   &:hover {
     outline: 2px solid ${({ theme }) => theme.colors.accent}80;
@@ -120,13 +120,13 @@ const ToggleIcon = styled(FontAwesomeIcon as AwesomeIconType)`
 `;
 
 const ToggleButton = styled(FontAwesomeIcon as AwesomeIconType)`
-  transform: translate(0.3em, 0);
+  transform: translate(0.1em, 0);
   color: ${({ theme }) => theme.colors.themeIcon};
   transition: transform 0.25s;
   padding: ${({ theme }) => theme.spacing.xs};
 
   &.dark-mode {
-    transform: translate(-1.7rem, 0);
+    transform: translate(-2.5rem, 0);
   }
 `;
 

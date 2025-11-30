@@ -7,6 +7,7 @@ import Content from "./Content";
 import Footer from "./Footer";
 import Divider from "./Divider";
 import { IS_UNDER_DEVELOPMENT } from "../shared/constants";
+import { SkillsSection } from "./Skills";
 
 const App = () => {
   const { t } = useTranslation();
@@ -22,6 +23,8 @@ const App = () => {
           <Header />
           <Divider />
           <Content />
+          <SkillsSection />
+          <Divider />
           <Footer />
         </PageContainer>
       </PageOuterContainer>
@@ -47,7 +50,7 @@ const PageContainer = styled.div`
     width: 50%;
   }
 
-  @media only screen and (max-width: ${({ theme }) => theme.bp.small}) {
+  @media only screen and (max-width: ${({ theme }) => theme.bp.narrow}) {
     width: 85%;
   }
 `;

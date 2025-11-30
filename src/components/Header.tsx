@@ -9,10 +9,17 @@ const Header = () => {
 
   return (
     <header>
-      <PageOptions>
-        <DarkModeToggle />
-        <LanguageSwitcher />
-      </PageOptions>
+      <Top>
+        <PageOptions>
+          <DarkModeToggle />
+          <LanguageSwitcher />
+        </PageOptions>
+        <div>
+          <JumpLink href="#skills-section">
+            {t("skillsBreakdownLink")} <span>↓</span>
+          </JumpLink>
+        </div>
+      </Top>
       <PageHeading>
         <HeadingImage src={mikko} alt="Mikko Larinen" />
         <HeadingTitle>{t("header")}</HeadingTitle>
@@ -24,12 +31,22 @@ const Header = () => {
 
 export default Header;
 
+const Top = styled.div`
+  display: flex;
+  gap: ${({ theme }) => theme.spacing.s};
+  justify-content: space-between;
+  width: 100%;
+  padding-top: ${({ theme }) => theme.spacing.xxl};
+
+  @media only screen and (max-width: ${({ theme }) => theme.bp.narrow}) {
+    flex-direction: column;
+    text-align: center;
+  }
+`;
+
 const PageOptions = styled.div`
   display: flex;
   gap: ${({ theme }) => theme.spacing.s};
-  justify-content: left;
-  width: 100%;
-  padding-top: ${({ theme }) => theme.spacing.xxl};
 
   @media only screen and (max-width: ${({ theme }) => theme.bp.narrow}) {
     justify-content: center;
@@ -75,5 +92,25 @@ const Tagline = styled.p`
 
   @media only screen and (max-width: ${({ theme }) => theme.bp.narrow}) {
     text-align: center;
+  }
+`;
+
+const JumpLink = styled.a`
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.3rem;
+
+  border: 4px double transparent;
+  background-color: ${({ theme }) => theme.colors.backgroundSecondary};
+  border-radius: 3rem;
+
+  font: ${({ theme }) => theme.fonts.body};
+  color: ${({ theme }) => theme.colors.bodyText};
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    border: 4px double ${({ theme }) => theme.colors.accent};
   }
 `;

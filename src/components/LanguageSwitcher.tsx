@@ -42,7 +42,7 @@ const LanguageButton = styled.button`
   border: none;
   border-radius: 3rem;
   outline: none;
-  height: 2rem;
+  height: 2.3rem;
 
   text-transform: uppercase;
   font: ${({ theme }) => theme.fonts.meta};
