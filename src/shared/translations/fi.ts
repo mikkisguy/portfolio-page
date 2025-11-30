@@ -48,6 +48,80 @@ const finnish: TranslationResource = {
         "Tehty tilastosivu ja Discord-botti joka kerää sanamääriä sekä mm. logittaa kanavia. Dataa havainnollistettu erilaisten kaavioiden avulla. Tietoja sensuroitu yksityisyyden vuoksi.",
     },
   ],
+  technicalSkillsExperience: "Tekniset taidot ja kokemus",
+  technologyArea: "Teknologia / Alue",
+  proficiencyContext: "Pätevyys & Konteksti",
+  skillsBreakdownTitle: {
+    hidden: "Näytä yksityiskohtainen tekninen erittely ja itsearviointi",
+    visible: "Piilota yksityiskohtainen tekninen erittely ja itsearviointi",
+  },
+  summaryTags: [
+    "React & TypeScript",
+    "Netvisor kokemus",
+    "Full Stack (Node/PHP)",
+    "Playwright E2E",
+    "Figma / UX",
+    "Äidinkieli suomi",
+  ],
+  skillsBreakdown: [
+    {
+      category: "Frontend",
+      skills: [
+        {
+          area: "React",
+          level: "Ammatillinen pätevyys (hooks, context, mukautetut kirjastot)",
+        },
+        {
+          area: "TypeScript",
+          level: "Pätevä (rajapinnat, tyypit, turvallisuus)",
+        },
+        {
+          area: "CSS & UI",
+          level: "Edistynyt (Flexbox, Grid, Styled Components)",
+        },
+      ],
+    },
+    {
+      category: "Full Stack & Backend",
+      skills: [
+        {
+          area: "Node.js",
+          level: "Käytännön osaaminen (Express, API-toteutus)",
+        },
+        { area: "PHP", level: "Keskitaso / ylläpitäjä (Legacy-tuki)" },
+        { area: "SQL / Tietokanta", level: "Keskitaso (MariaDB, MySQL)" },
+      ],
+    },
+    {
+      category: "Laadunvarmistus & operatiiviset taidot",
+      skills: [
+        { area: "Testaus", level: "Keskitaso (Playwright E2E, Postman)" },
+        {
+          area: "DevOps",
+          level: "Käytännön osaaminen (Docker, CI/CD-toiminnot)",
+        },
+        {
+          area: "Git / työnkulku",
+          level: "Ammattimainen rutiini (koodin tarkistukset, haarautuminen)",
+        },
+        {
+          area: "AI-tehostettu työnkulku",
+          level: "Taitava (Copilot, nopea prototyyppien luominen)",
+        },
+      ],
+    },
+    {
+      category: "Suunnittelu ja pehmeät taidot",
+      skills: [
+        { area: "UI/UX", level: "Suunnittelija-kehittäjä-hybridi (Figma)" },
+        { area: "Kieli", level: "Äidinkieli suomi, sujuva englanti" },
+        {
+          area: "Työskentelytapa",
+          level: "Itsenäinen ja oma-aloitteinen vastuunkantaja",
+        },
+      ],
+    },
+  ],
 };
 
 export default finnish;

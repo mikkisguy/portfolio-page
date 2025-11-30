@@ -48,6 +48,74 @@ const english: TranslationResource = {
         "I made a statistics page and a Discord bot that collects word counts, logs text channels and various other things. Data is presented using various charts. Parts of the information is redacted for privacy reasons.",
     },
   ],
+  technicalSkillsExperience: "Technical Skills & Experience",
+  technologyArea: "Technology / Area",
+  proficiencyContext: "Proficiency & Context",
+  skillsBreakdownTitle: {
+    hidden: "Show Detailed Technical Breakdown & Self-Assessment",
+    visible: "Hide Detailed Technical Breakdown & Self-Assessment",
+  },
+  summaryTags: [
+    "React & TypeScript",
+    "Netvisor Exp.",
+    "Full Stack (Node/PHP)",
+    "Playwright E2E",
+    "Figma / UX",
+    "Native Finnish",
+  ],
+  skillsBreakdown: [
+    {
+      category: "Core Frontend",
+      skills: [
+        {
+          area: "React",
+          level: "Professional Proficiency (Hooks, Context, Custom Libs)",
+        },
+        { area: "TypeScript", level: "Proficient (Interfaces, Types, Safety)" },
+        {
+          area: "CSS & UI",
+          level: "Advanced (Flexbox, Grid, Styled Components)",
+        },
+      ],
+    },
+    {
+      category: "Full Stack & Backend",
+      skills: [
+        {
+          area: "Node.js",
+          level: "Practical Knowledge (Express, API Construction)",
+        },
+        { area: "PHP", level: "Intermediate / Maintainer (Legacy Support)" },
+        { area: "SQL / Database", level: "Intermediate (MariaDB, MySQL)" },
+      ],
+    },
+    {
+      category: "Quality & Operations",
+      skills: [
+        { area: "Testing", level: "Intermediate (Playwright E2E, Postman)" },
+        {
+          area: "DevOps",
+          level: "Practical Knowledge (Docker, CI/CD Actions)",
+        },
+        {
+          area: "Git / Workflow",
+          level: "Professional Routine (Code Reviews, Branching)",
+        },
+        {
+          area: "AI-Enhanced Workflow",
+          level: "Proficient (Copilot, Rapid Prototyping)",
+        },
+      ],
+    },
+    {
+      category: "Design & Soft Skills",
+      skills: [
+        { area: "UI/UX", level: "Designer-Developer Hybrid (Figma)" },
+        { area: "Language", level: "Native Finnish, Fluent English" },
+        { area: "Work Style", level: "Independent & Proactive Owner" },
+      ],
+    },
+  ],
 };
 
 export default english;

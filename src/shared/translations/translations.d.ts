@@ -11,6 +11,11 @@ export type PortfolioItems = {
   description: string;
 }[];
 
+export type SkillsBreakdown = {
+  category: string;
+  skills: { area: string; level: string }[];
+}[];
+
 export type TranslationResource = {
   underDevelopment: string;
   changeLanguage: string;
@@ -27,4 +32,10 @@ export type TranslationResource = {
     workProject: string;
   };
   portfolioItems: PortfolioItems;
+  technicalSkillsExperience: string;
+  technologyArea: string;
+  proficiencyContext: string;
+  skillsBreakdownTitle: { hidden: string; visible: string };
+  summaryTags: string[];
+  skillsBreakdown: SkillsBreakdown;
 };
