@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterText>
-        Mikko Larinen - 2024 {" - "}
+        Mikko Larinen - 2025 {" - "}
         <a
           href="https://github.com/mikkisguy/portfolio-page"
           className="external-link"
